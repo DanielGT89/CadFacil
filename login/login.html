@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CadFacil-Login</title>
+    <link rel="stylesheet" href="login.css">    
+    <link rel="icon" href="imagen/i11.png">
+</head>
+<body >
+     <div class="logo">
+        <a href="login.html">
+            <img src="imagen/i11.png" alt="i11.png">
+        </a>
+     </div>
+    <div class="corpo"></div>     
+
+    <h1 class="cadfacil">CadFacil</h1>
+    <form class="telalogin">
+        <h1 class="loginnome">Login</h1>
+        <input type="text" placeholder="Login" id="login">
+        <br><br>
+        <input type="password" placeholder="Senha" id="senha">
+        <br><br>
+        <input class="enviar" type="submit" onclick="logar(); return false" >
+       
+        <br><br>
+        <a href="cadastra.html">
+            <button>Cadastra-se</button>
+        </a>
+        
+    </form>
+
+    <script>
+
+        function logar(){
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha'). value;
+            
+            if(login == 'Daniel@' && senha == '123456'){
+
+                alert('Login Bem sucedido');
+                location.href="Index.html"
+            } else{
+                alert('senha incorrreta');
+            }
+                    
+        }
+
+    </script>
+    <table border="0" height="10">
+        <tr >
+        <td width="1900"><center>Copyright 2024. All Rights Reserved</center></td>
+     </tr>
+    </table>
+</body>
+</html>

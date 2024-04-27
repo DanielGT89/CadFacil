@@ -1,0 +1,165 @@
+body{
+    align-items:center ;
+    justify-content:center ;
+}
+
+.telalogin{
+    background-color:rgba(91, 146, 194, 0.24);
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%-50%);
+    padding: 300px;
+    width: 40%;
+    height: 240px;
+    border-radius: 20px;
+    color: black;
+}
+
+input{
+    position: relative;
+     top: -250px;
+     left: -60%;
+     width: 350px;
+     height: 25px;
+     outline: none;
+     font-size: 15px; font-style: center;
+     padding: 17px;
+     border-radius: 15px;
+}
+.alterarsenha{
+    position: relative;
+    text-shadow: 5px 5px 11px rgba(0, 0, 0,1 );
+    font-family: 'Centaur'; font-style: oblique;
+    font-size: 80px;
+    position: absolute;
+    top: -40%;
+    left: 25%;
+    
+}
+button{
+    position: relative;
+    top: -210px;
+    left: -114px;
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'centaur';font-size: oblique;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    background-color: #213F59;
+    color: aliceblue;
+    
+}
+
+button:hover{
+    background-color: #90B5D6;
+    cursor: pointer;
+    color: black;
+}
+button[disabled]{
+    opacity: 1,9,;
+    background-color: #90b5d61f;
+}
+label{
+    text-shadow: 5px 5px 11px rgba(0, 0, 0,1 );
+    font-family: 'Centaur';  font-style: oblique; 
+    font-size: 22px;
+    position: relative;
+    top: -230px;
+    left: -75px;
+    white-space: nowrap;
+}
+.cadfacil{
+    position: relative;
+    text-shadow: 5px 5px 11px rgba(0, 0, 0,2 );
+    font-family: 'Centaur'; font-style: oblique;
+    font-size: 50px;
+    position: absolute;
+    top: -20%;
+    left: 40%;
+    
+}
+.copia{
+    position: relative;
+    z-index: 0;
+    left: -20px;
+    top: -50px;
+    white-space: nowrap;
+    align-items: end;
+    
+}
+.sair{
+    position: relative;
+    width: 40px;
+    height: auto;
+    top: -3px;
+    left: auto;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-family: 'Centaur';
+    text-shadow: 5px 5px 11px rgb(0, 0, 0);
+    color: black;
+    font-style: oblique;
+    cursor: pointer;
+    border-radius: 15px;
+    
+}
+.sair:hover{
+    background-color: #170cb3;
+    color: rgb(241, 235, 235);
+    
+}
+.error{
+    position: relative;
+    border-radius: 5px;
+    font-size: 17px;
+    top: -155px;
+    left: -80px;
+    position: relative;
+    background: red;
+    color: white;
+    display: none;
+    width: 300px;
+}.error2{
+    position: relative;
+    border-radius: 5px;
+    font-size: 17px;
+    top: -200px;
+    left: -80px;
+    position: relative;
+    background: red;
+    color: white;
+    display: none;
+    width: 160px;
+}
+
+
+
+
+@media  (max-width: 1628px){
+
+    .telalogin{
+        padding: 300px;
+        position: relative;
+        width: 750px;
+        top: 200px;
+    }
+    input{
+        position: relative;
+        left: -85px;
+        
+    }
+    body{
+        margin: auto, center;
+        
+    }
+    .rodape{
+        position: relative;
+        left: 780px;
+    }
+
+
+}
+ 

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CadFacil</title>
+    <link rel="icon" type="i11/png" href="imagen/i11.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/minhacontasenha.css">
+    
+    
+
+    
+</head>
+<body>
+    <div class="back"></div>
+    <header>
+        <div class="t">
+            <div class="logo">
+            <a href="index.html">
+                <img src="imagen/i11.png" alt="i11.png">
+            </a>
+            </div>
+                 <div class="title">
+                <h2>CadFacil</h2>
+                </div>
+        </div>
+        
+
+        <nav>
+            <ul class="navegaçao">
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#">Cadastros</a>
+                    
+                    <ul class="submenu">
+                        <li><a href="cadastromembro.html">Cadastro De Membros</a></li>
+                        <li><a href="cadastrodebatismo.html">Cadastro De Batismo</a></li>
+                        <li><a href="cartadeapresentaçao.html">Carta De Apresentação</a></li>
+                        <li><a href="cartademudança.html">Carta De Mudança</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Minha Conta</a>
+                    <ul class="sub">
+                          <li><a href="minhaconta.html">Alterar Senha</a></li></ul>
+                </li>    
+                <li><a><button type="" class="sair" onclick="logout()">Sair</button></a></li>
+            </ul>
+        </nav>
+     </header>
+    
+     <div class="corpo"></div>
+     <div class="telalogin">
+         <h1 class="alterarsenha">Alterar Senha</h1>
+         <h2 class="cadfacil">CadFacil</h2>
+    <form id="change-password-form"  onsubmit="changePassword(); return false;">
+         <label for="currentPassword">Senha Antiga:</label>
+         <br><br>
+         <input type="password" id="currentPassword"  placeholder="Senha Antiga">
+         <div class="error2" id="password-required-error">Senha é obrigatória</div>
+         <br><br>
+         <label for="newPassword">Senha Nova:</label>
+         <div class="error" id="password-min-length-error">Senha deve ter pelo menos 6 caracteres</div>
+         <br><br>
+         <input type="password" id="newPassword" placeholder="Senha Nova">
+         <br><br>
+         <label for="confirmPassword">Confirmação Senha Nova:</label>
+         <div class="error" id="password-doesnt-match-error">Senha e Confirmar senha devem ser iguais</div>
+         <br><br>
+         <input type="password" id="confirmPassword" placeholder="Confirmação Senha Nova">
+         <button type="submit" id="change-password-button" disabled>Alterar Senha</button>
+         <br><br>
+         <a href="index.html">
+             <button>Cancelar</button>
+         </a>
+         
+     
+    </form>      
+    <div id="error-message"></div>  </div>  
+        <!--- <a href="login.html">
+             <button>Alterar</button>
+         </a>-->
+         
+    <!---
+    <div class="header">
+        <h1>CadFacil</h1>
+    </div>
+    <div class="guia">
+        <a href="#">Inicio</a>
+        <a href="#">Cadastro</a>
+        <a href="#">Situaçao</a>
+        <a href="#">Minha Conta</a>
+
+    </div>
+-->
+    
+<script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-auth-compat.js"></script>
+<script src="javascript/farebase.js"></script>
+<script src="javascript/alterar.js"></script>
+<script src="javascript/sair.js"></script>
+<script src="javascript/guarda.js"></script>
+
+
+
+
+
+</body>
+</html>

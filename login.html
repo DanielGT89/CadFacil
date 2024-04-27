@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CadFacil-Login</title>
+    <link rel="stylesheet" href="login/login.css">
+    <link rel="icon" href="imagen/i11.png">
+    <link rel="stylesheet" href="css/global.css">
+    
+    
+</head>
+<body  >
+
+     <div class="logo">
+        <a href="login.html">
+            <img src="imagen/i11.png" alt="i11.png">
+        </a>
+     </div>
+    <div class="corpo"></div>     
+
+    <h1 class="cadfacil">CadFacil</h1>
+    <form action="index.html" class="telalogin">
+        <h1 class="loginnome">Login</h1>
+        <input type="email" name="email" placeholder="seu@email.com" id="email" onchange="onChangeEmail()"/>
+        <div class="error3" id="email-required-error">Email é obrigatório</div>
+        <div class="error3" id="email-invalid-error">Email é inválido</div>
+        <input type="password" name="Senha" placeholder="Senha" id="password" onchange="onChangePassword()"/>
+        <div class="error2" id="password-required-error">Senha é obrigatória</div>
+        <button type="button" class="entrar2" id="login-button" disabled="true" disabled="true" onclick="login()">Entrar</button>
+        <br><br>
+        <button type="button" class="entrar2"onclick="register()">Cadastra-se</button>
+        <br>
+        <button type="button" class="recuperar"id="recover-password-button" onclick="recoverPassword()" disabled="true"> Recuperar Senha </button>
+
+
+    </form>
+    
+        
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-auth-compat.js"></script>
+    <script src="javascript/farebase.js"></script>
+
+    
+    <script src="javascript/login.js"></script>    
+    <script src="javascript/validador.js"></script>
+    
+    <script src="javascript/carregamento.js"></script> 
+    
+    
+    
+    
+    
+</body>
+
+    
+</html>

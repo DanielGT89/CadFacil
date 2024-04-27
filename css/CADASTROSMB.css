@@ -1,0 +1,67 @@
+body{
+    align-items: center;
+}
+
+.botao{
+    position: relative;
+    top: -40%;
+    left: -0%;
+    width: 5%;
+    height:15% ;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: 'centaur';font-size: oblique;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    background-color: #213F59;
+    color: aliceblue;
+}
+.botao:hover{
+    background-color: #90B5D6;
+    cursor: pointer;
+    color: black
+
+}
+input{
+    font-family: 'centaur';
+    font-style: oblique;
+    outline: none ;
+    border-radius: 15px;
+    font-size: 18px;
+    font-family: 'centaur'; font-size: oblique;
+    padding: 3px;
+}
+.tamanhodecaixa{
+    width: 500px;
+        
+    
+}
+.tamanhodecaixa2{
+    width:250px;
+}
+
+label{
+    font-family: 'centaur';
+    font-style: oblique;
+    font-size: 20px;
+    
+}
+.bloco{
+    font-family: 'centaur';
+    font-style: oblique;
+    font-size: 20px;
+}
+.escolaridade{
+
+    width: 250px;
+}
+
+.botao1{
+    border-radius: 10px;
+    position: relative;
+    font-size: 15px;
+    cursor: pointer;
+            
+}
+.ponteiro{
+    cursor: pointer;
+}

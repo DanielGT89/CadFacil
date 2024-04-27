@@ -1,0 +1,142 @@
+body{
+    align-items: center;
+}
+.telalogin{
+    background-color:rgba(91, 146, 194, 0.24);
+    position: relative;
+    top: 200px;
+    left: 30%;
+    transform: translate(-50%-50%);
+    padding: 300px;
+    width: 40%;
+    height: 5px;
+    border-radius: 20px;
+    color: black;
+}
+
+input{
+    position: relative;
+     top: -200px;
+     left: -60%;
+     width: 350px;
+     height: 25px;
+     outline: none;
+     font-size: 15px; font-style: center;
+     padding: 17px;
+     border-radius: 15px;
+}
+.solicitar{
+    position: relative;
+    text-shadow: 5px 5px 11px rgba(0, 0, 0,1 );
+    font-family: 'Centaur'; font-style: oblique;
+    font-size: 80px;
+    position: absolute;
+    top: -40%;
+    left: -10%;
+    white-space: nowrap;
+    
+}
+button{
+    position: relative;
+    top: -150px;
+    left: -114px;
+    width: 400px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: 'centaur';font-size: oblique;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    background-color: #213F59;
+    color: aliceblue;
+    
+}
+
+button:hover{
+    background-color: #90B5D6;
+    cursor: pointer;
+    color: black
+}
+label{
+    text-shadow: 5px 5px 11px rgba(0, 0, 0,1 );
+    font-family: 'Centaur';  font-style: oblique; 
+    font-size: 22px;
+    position: relative;
+    top: -185px;
+    left: 35px;
+    white-space: nowrap;
+}
+.cadfacil{
+    position: relative;
+    text-shadow: 5px 5px 11px rgba(0, 0, 0,2 );
+    font-family: 'Centaur'; font-style: oblique;
+    font-size: 50px;
+    position: absolute;
+    top: -22%;
+    left: 40%;
+    
+}
+.copia{
+    position: relative;
+    display: flex;
+    top: 280px;
+    left: 25px;
+}
+.copia{
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50px;
+    
+}
+.sair{
+    position: relative;
+    width: 40px;
+    height: auto;
+    top: -3px;
+    left: auto;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-family: 'Centaur';
+    text-shadow: 5px 5px 11px rgb(0, 0, 0);
+    color: black;
+    font-style: oblique;
+    cursor: pointer;
+    border-radius: 15px;
+    
+}
+.sair:hover{
+    background-color: #170cb3;
+    color: rgb(241, 235, 235);
+    
+@media  (max-width: 1628px){
+
+    .telalogin{
+        padding: 300px;
+        position: relative;
+        width: 750px;
+        
+    }
+    input{
+        position: relative;
+        left: -85px;
+        
+    }
+    body{
+        margin: auto;
+        
+    }
+    .copia{
+        position: absolute;
+        left:8%;
+        top: 100%;
+    }
+    .solicitar{
+        position: auto;
+        left: -40px;
+
+    }
+
+}
+    
+    

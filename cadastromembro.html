@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CadFacil</title>
+    <link rel="icon" type="i11/png" href="imagen/i11.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/CADASTROSMB.css">
+    <link rel="stylesheet" href="css/global.css">
+    
+</head>
+<body>
+    <div class="back"></div>
+    <header>
+        <div class="t">
+            <div class="logo">
+            <a href="index.html">
+                <img src="imagen/i11.png" alt="i11.png">
+            </a>
+            </div>
+                 <div class="title">
+                <h2>CadFacil</h2>
+                </div>
+        </div>
+        
+
+        <nav>
+            <ul class="navegaçao">
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#">Cadastros</a>
+                    
+                    <ul class="submenu">
+                        <li><a href="cadastromembro.html">Cadastro De Membros</a></li>
+                        <li><a href="cadastrodebatismo.html">Cadastro De Batismo</a></li>
+                        <li><a href="cartadeapresentaçao.html">Carta De Apresentação</a></li>
+                        <li><a href="cartademudança.html">Carta De Mudança</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Minha Conta</a>
+                    <ul class="sub">
+                          <li><a href="minhaconta.html">Alterar Senha</a></li></ul>
+                </li>    
+                <li><a><button type="button" class="sair" onclick="logout()"> Sair</button></a></li>    
+
+            </ul>
+        </nav>
+     </header>
+
+     </header>
+
+     
+       
+     
+    
+<b> <center>
+
+     <h1 class="label">Formulário de Cadastro Membros</h1>
+
+     <form id="formaCadastro" action="#" method="POST" onsubmit="return validarCampos()">
+        <fieldset class="bloco" >
+          <legend>Dados Pessoais</legend>
+          <label for="denominacao">Denominação:</label>
+          <input type="text" id="denominacao" name="denominacao" placeholder="Digite a denominação" class="tamanhodecaixa" required>
+    
+          <label for="igreja_local">Igreja Local:</label>
+          <input type="text" id="igreja_local" name="igreja_local" placeholder="Digite a igreja local" class="tamanhodecaixa" required><br><br>
+    
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite o nome Completo" class="tamanhodecaixa" required>
+    
+          <label for="data_nascimento">Data de Nascimento:</label>
+          <input type="date" id="data_nascimento" name="data_nascimento" placeholder="dd/mm/aaaa" class="ponteiro" required >
+          <label for="naturalidade">Naturalidade:</label>
+          <input type="text" id="naturalidade" name="naturalidade" placeholder="Digite a naturalidade" required>
+    
+          <label for="estado_civil">Estado Civil:</label>
+          <input type="text" id="estado_civil" name="estado_civil" placeholder="Digite o estado civil" required><br><br>
+    
+          <label for="conjuge">Nome do Cônjuge:</label>
+          <input type="text" id="conjuge" name="conjuge" placeholder="Digite o nome do cônjuge" class="tamanhodecaixa" required>
+    
+          <label for="filiacao_pai">Filiação do Pai:</label>
+          <input type="text" id="filiacao_pai" name="filiacao_pai" placeholder="Digite a filiação do pai" class="tamanhodecaixa" required><br><br>
+    
+          <label for="filiacao_mae">Filiação da Mãe:</label>
+          <input type="text" id="filiacao_mae" name="filiacao_mae" placeholder="Digite a filiação da mãe" class="tamanhodecaixa" required><br><br>
+        </fieldset>
+    
+        <fieldset class="bloco">
+          <legend>Informações Profissionais</legend>
+          <label for="situacao_profissional">Situação Profissional:</label>
+          <input type="radio" id="empregado" name="situacao_profissional" value="Empregado" class="ponteiro" required >
+          <label for="empregado">Empregado</label>
+          <input type="radio" id="desempregado" name="situacao_profissional" value="Desempregado" class="ponteiro" required >
+          <label for="desempregado">Desempregado</label><br><br>
+          <label for="profissao">Profissão:</label>
+          <input type="text" id="profissao" name="profissao" placeholder="Digite a profissão" class="tamanhodecaixa2" required>
+    
+          <label for="escolaridade">Escolaridade:</label>
+          <input list="tipos" nome="Selecione" placeholder=" Selecione Escolaridade" class="escolaridade" required>
+          <datalist id="tipos">
+             <option value="Fundamenta incompleto"></option>
+             <option value="Fundamenta Cursando"></option>
+             <option value="Fundamenta Completo"></option>
+             <option value="Ensino Medio incompleto"></option>
+             <option value="Ensino Medio Cursando"></option>
+             <option value="Ensino Medio Completo"></option>
+             <option value="Superio Incompleto"></option>
+             <option value="Superio Cursando"></option>
+             <option value="Superio Completo"></option>
+          </datalist>
+        </fieldset>
+    
+        <fieldset class="bloco">
+          <legend>Documentos e Contato</legend>
+          <label for="rg">RG:</label>
+          <input type="text" id="rg" name="rg" placeholder="Digite o RG">
+    
+          <label for="cpf">CPF:</label>
+          <input type="number" id="cpf" name="cpf" placeholder="Digite o CPF" required><br><br>
+    
+          <label for="telefone1">Telefone 1:</label>
+          <input type="tel" id="telefone1" name="telefone1" placeholder="(xx) xxxxx-xxxx" required> 
+    
+          <label for="telefone2">Telefone 2:</label>
+          <input type="tel" id="telefone2" name="telefone2" placeholder="(xx) xxxxx-xxxx">
+    
+          <label for="telefone3">Telefone 3:</label>
+          <input type="tel" id="telefone3" name="telefone3" placeholder="(xx) xxxxx-xxxx"><br><br>
+    
+          <label for="endereco">Endereço:</label>
+          <input type="text" id="endereco" name="endereco" placeholder="Digite o endereço" class="tamanhodecaixa"  required>
+
+          <label for="numero">Numero/Casa</label>
+          <input type="text" name="numero" id="numero" placeholder="Digite Numero ou Casa" class="tamanhodecaixa2" required>
+
+          <label for="Setor">Setor/Bairro</label>
+          <input type="text" id="setor/bairro" name="setor/bairro" placeholder="Digite seu Setor ou Bairro" class="tamanhodecaixa2" required>
+          
+          <br><br>
+
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade" placeholder="Digite a cidade" required>
+          <label for="estado">Estado:</label>
+          <input type="text" id="estado" name="estado" placeholder="Digite o estado"required>
+          <label for="cep">CEP:</label>
+          <input type="number" id="cep" name="cep" placeholder="Digite o CEP" required><br><br>
+        </fieldset>
+    
+        <fieldset class="bloco">
+          <legend>Informações Religiosas</legend>
+          <label for="batismo_espirito_santo">Batizado no Espírito Santo?</label>
+          <input type="radio" id="batismo_s" name="batismo_espirito_santo" value="Sim" class="ponteiro" required >
+          <label for="batismo_s">Sim</label>
+          <input type="radio" id="batismo_n" name="batismo_espirito_santo" value="Não" class="ponteiro" required >
+          <label for="batismo_n">Não</label>&nbsp;&nbsp;&nbsp;
+          <label for="data_batismo_espirito">Quando?</label>
+          <input type="date" id="data_batismo_espirito" name="data_batismo_espirito" placeholder="dd/mm/aaaa" class="ponteiro"><br><br>
+    
+          <label for="batismo_aguas">Batizado nas Águas?</label>&nbsp;&nbsp;&nbsp;
+          <input type="radio" id="batismo_aguas_s" name="batismo_aguas" value="Sim" class="ponteiro" required >
+          <label for="batismo_aguas_s">Sim</label>
+          <input type="radio" id="batismo_aguas_n" name="batismo_aguas" value="Não" class="ponteiro" required >
+          <label for="batismo_aguas_n">Não</label><br><br>&nbsp;&nbsp;&nbsp;
+          <label for="data_batismo_aguas">Data do Batismo:</label>
+          <input type="date" id="data_batismo_aguas" name="data_batismo_aguas" placeholder="dd/mm/aaaa" class="ponteiro">
+          <label for="igreja_batismo_aguas">Na Igreja:</label>
+          <input type="text" id="igreja_batismo_aguas" name="igreja_batismo_aguas" placeholder="Digite a igreja do Batismo" class="tamanhodecaixa"> 
+          <br><br>
+          <br><br>
+          <label for="arquivo">Documentos Complementares:</label>
+          <input type="file" id="arquivo" name="arquivo" multiple class="botao1" >
+          <br><br>
+          <br><br>
+ 
+          <input type="submit" value="Enviar" id="enviar" class="botao">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Limpar" class="botao">
+          
+          
+          
+        </fieldset>
+      </form>     
+      
+      <script>
+        function validarCampos() {
+        
+        const camposObrigatorios = document.querySelectorAll('[required]');
+        
+
+        for (const campo of camposObrigatorios) {
+            if (campo.value.trim() === '') {
+                
+                alert(`Por favor, preencha o campo "${campo.getAttribute('name')}"`);
+            
+                return false;
+            }
+        }
+        
+    
+        alert('Formulário enviado com sucesso!');
+        return true;
+    }
+     </script>
+
+<script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-auth-compat.js"></script>
+<script src="javascript/farebase.js"></script>
+
+<script src="javascript/sair.js"></script>
+<script src="javascript/guarda.js"></script>
+      
+</b> </center>
+
+
+
+</body>
+</html>
